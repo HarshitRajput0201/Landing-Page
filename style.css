@@ -6,6 +6,7 @@
 
 /* ***************************************************Header Starts************************************************************************ */
 .main-container{
+    width : 100%;
     padding-top: 0;
     background: #000;
     background-image: 
@@ -98,6 +99,7 @@
     align-items: center;
     /* gap: 50px; */
     margin: auto;
+    overflow: hidden;
 }
 
 
@@ -112,7 +114,7 @@
     backdrop-filter: blur(20px);
     background-color: #ffffff1a;
     position: sticky;
-    top: 50px;
+    top: 40px;
     z-index: 10;
     padding: 10px 0;
     margin: auto;
@@ -125,8 +127,8 @@
 }
 
 .technolkar-logo{
-    width: 36px;
-    height: 40px;
+    width: 32px;
+    height: 36px;
     margin: 0 16px;
 }
 
@@ -278,7 +280,7 @@
 .main-heading h1{
     font-family: Urbanist;
     font-size: 76px;
-    font-weight: 500;
+    font-weight: 600;
     background: linear-gradient(99.57deg, #C471F7 16.83%, rgba(235, 169, 71, 0.66) 96.78%, rgba(188, 180, 234, 0.25) 110.94%, rgba(106, 117, 213, 0.475) 126.77%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -338,6 +340,7 @@
 }
 
 .student-container{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -430,6 +433,8 @@
     display: flex;
     flex-direction: column;
     gap: 100px;
+    overflow: hidden;
+
 }
 .heading{
     display: flex;
@@ -599,6 +604,8 @@
     margin: auto;
     gap: 100px;
     padding: 150px 0 0 0;
+    overflow: hidden;
+
 
 }
 .service-container{
@@ -698,6 +705,8 @@
     margin: auto;
     gap: 100px;
     padding: 150px 0 0 0;
+    overflow: hidden;
+
 }
 
 .youtube-container{
@@ -1006,6 +1015,7 @@
     margin: auto;
     gap: 100px;
     padding: 150px 0 0 0;
+    overflow: hidden;
 }
 .card_container{
     display: grid;
@@ -1023,6 +1033,7 @@
     justify-content: center;
     align-items: center;
     height: 500px;
+    width: 100%;
 }
 .card1,
 .card2,
@@ -1140,6 +1151,7 @@
     margin: auto;
     gap: 100px;
     padding: 150px 0 50px 0;
+    overflow: hidden;
 }
 
 .testmonials-container{
@@ -1385,3 +1397,257 @@
     text-align: left;
     color: rgba(255, 255, 255, 0.692);
 }
+
+/* ********************************************************************************************Footer Ends ******************************************************************************************************* */
+
+
+/* ********************************************************************************************Media Queries Starts ******************************************************************************************************* */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* ********************************************************************************************Header starts************************************************************************************************** */
+  
+    .technolkar-header{
+        width: 728px;
+    }
+
+    /* ********************************************************************************************Header Ends**************************************************************************************************** */
+
+    /* ********************************************************************************************Home starts************************************************************************************************** */
+
+    .Home{
+        width: 728px;
+    }
+    .Products,
+    .Services,
+    .Youtube,
+    .Teams,
+    .Footer{
+        width: 728px;
+        padding: 120px 0 0 0 ;
+    }
+
+    .home-container{
+        width: 100%;
+        gap: 60px;
+        padding: 80px 0 0 0;
+        margin-top: 50px;
+    }
+
+    .main-heading h1{ 
+        font-size: 48px;
+        font-weight: 600;
+        width: 80%;
+    }
+    .community-button button{
+        width: 270px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .student-tabs{
+        width: 100%;
+    }
+    .video-container{
+        border-radius: 24px;
+        padding: 20px;
+    }
+
+    /* ********************************************************************************************Home Ends**************************************************************************************************** */
+
+    /* ********************************************************************************************Product starts*********************************************************************************************** */
+    .Products{
+        gap: 60px;
+    }
+    .heading{
+        gap: 0px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .product-card1,
+    .product-card2,
+    .product-card3{
+        border-radius: 24px;
+        height: 300px;
+        padding: 16px;
+    }
+    .product-image img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    .product-des1,
+    .product-des2,
+    .product-des3{
+        padding:  52px 42px;
+        gap: 24px;
+    }
+    .product-des-detail h1{
+        font-size: 24px;
+    }
+    .button-container button{
+        width: 140px;
+        height: 40px;
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+    .button-div h1{
+        font-size: 16px;
+    }
+
+
+   /* ********************************************************************************************Product Ends*********************************************************************************************** */
+
+
+   /* ********************************************************************************************Service start********************************************************************************************** */
+
+   .Services{
+        gap: 60px;
+   }
+   .service-container{
+        grid-template-columns: repeat(2, 1fr);
+   }
+   .service-name h1{
+        font-size: 20px;
+   }
+
+   /* ********************************************************************************************Service Ends********************************************************************************************** */
+
+   /* ********************************************************************************************Youtube start********************************************************************************************** */
+
+   .youtbe-cont-heading h1{
+    font-size: 24px;
+   }
+   .youtube-video-cont{
+        gap: 22px;
+        height: 250px;
+        align-items: start;
+   }
+   .youtube-subcon1,
+   .youtube-subcon2{
+    gap: 20px;
+   }
+   .video1-name h1{
+        font-size: 18px;
+   }
+   .youtube-video1-des{
+        gap: 20px;
+   }
+   .yotube-video1 img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+   }
+   .watch-button-co p{
+        padding: 12px 16px;
+   }
+   .hidden-you-card{
+        display: none;
+   }
+   .youtube-videos-cont{
+        gap: 22px;
+   }
+   .videos-div-1-a{
+        width: 49%;
+   }
+   .videos-div-1,
+   .videos-1-des{
+        width: 100%;
+   }
+   .video-name{
+        display: flex;
+        justify-content: end;
+   }
+   .video-name p{
+        width: 90%;
+   }
+   .channel-logo-div{
+        gap: 0px;
+        justify-content: space-between;
+   }
+   .channel-logo img{   
+        width: 40px;
+   }
+
+   /* ********************************************************************************************Youtube Ends********************************************************************************************** */
+
+   /* ********************************************************************************************Teams start********************************************************************************************** */
+
+   .Teams{
+        gap: 60px;
+   }
+   .card_container{
+        grid-template-columns: repeat(2, 1fr);
+   }
+   .card1,
+   .card2,
+   .card3,
+   .card4,
+   .card5,
+   .card6{
+        width: 100%;
+        height: 450px;
+        gap: 24px;
+   }
+   .card1-container,
+   .card2-container,
+   .card3-container,
+   .card4-container,
+   .card5-container,
+   .card6-container{
+        width: 100%;
+        gap: 0px;
+        height: 450px;
+   }
+   .card_image{
+        width: 300px;
+        height: 320px;
+   }
+   .card-des{
+        margin-top: 10px
+   }
+   .card_bio h1{
+        font-size: 22px;
+   }
+   .card_bio p{
+        font-size: 16px;
+   }
+   .footer-top{
+        flex-direction: column;
+        gap: 40px;
+   }
+   .footer-top-left{
+        justify-content: left;
+   }
+   .developed-by,
+   .copyright-des
+   {
+    font-size: 14px;
+   }
+
+@media (min-width: 600px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 480px) and (max-width: 599.98px) {
+
+}
+
+@media (min-width: 390px) and (max-width: 479.98px) {
+    
+}
+  
+
+
+
+
+
+
+
+  
+
+

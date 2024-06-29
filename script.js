@@ -43,30 +43,30 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,  // Enables infinite loop
-    autoplay: {
-      delay: 2500,  // Auto-scroll delay in milliseconds
-      disableOnInteraction: false,  // Continue auto-scroll after interaction
-    },
-    // breakpoints: {
-    //     // when window width is >= 320px
-    //     320: {
-    //       slidesPerView: 1,
-    //       spaceBetween: 10
-    //     },
-    //     // when window width is >= 480px
-    //     610: {
-    //       slidesPerView: 1,
-    //       spaceBetween: 20
-    //     },
-    //     // when window width is >= 768px
-    //     810: {
-    //       slidesPerView: 2,
-    //       spaceBetween: 30
-    //     },
-    //     // when window width is >= 1024px
-    //     1050: {
-    //       slidesPerView: 2,
-    //       spaceBetween: 30
-    //     }
-    //   }
+    // autoplay: {
+    //   delay: 2500,  // Auto-scroll delay in milliseconds
+    //   disableOnInteraction: false,  // Continue auto-scroll after interaction
+    // },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is >= 480px
+        610: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        // when window width is >= 1024px
+        1050: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        }
+      }
   });
