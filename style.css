@@ -1409,6 +1409,90 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    .main-container{
+        /* background-image: 
+        url('./Assets/Group\ 10145.png'), 
+        url('./Assets/Group\ 10143.png'),
+        url('./Assets/Group\ 4.png'),
+        url('./Assets/Group\ 4.png'),
+        url('./Assets/Group\ 4.png'),
+        url('./Assets/Group\ 4.png'),
+        url('./Assets/Group\ 10145.png'),
+        url('./Assets/Group\ 10145.png'),
+        url('./Assets/Group\ 10145.png'),
+        url('./Assets/Group\ 4.png'),
+        url('./Assets/Group\ 4.png'),
+        url('./Assets/Rectangle\ 7.png'),
+        url('./Assets/Ellipse\ 9.png'),
+        url('./Assets/Group\ 10145.png'),
+        url('./Assets/Rectangle\ 7.png'),
+        url('./Assets/Ellipse\ 9.png'),
+        url('./Assets/Group\ 10143.png'); */
+    
+    
+    /* Multiple background sizes */
+        background-size: 
+            450px 450px,
+            450px 450px,
+            1200px 1200px,
+            1200px 1200px,
+            1200px 1200px,
+            1200px 1200px,
+            600px 600px,
+            600px 600px,
+            450px 450px,
+            1500px 1100px,
+            1500px 1100px,
+            1200px 1000px,
+            1200px 1000px,
+            0px 0px,
+            000px 000px,
+            000px 000px,
+            0px 0px;
+    
+    
+        /* Multiple background repeats */
+        background-repeat: 
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat;
+    
+        /* Multiple background positions */
+        background-position: 
+            calc(50% - 300px) 200px,     
+            calc(50% + 300px) 116.66px,
+            center 200px,
+            center 800px,
+            center 2100px,
+            center 2700px,
+            calc(50% - 200px) 4100px,
+            calc(50% + 200px) 4100px,
+            calc(50% + 250px) 3900px,
+            calc(50%) 4800px,
+            calc(50%) 5300px,
+            calc(50% - 200px) 6400px,
+            calc(50% + 250px) 6300px,
+            calc(50%) 6300px,
+            calc(50% - 250px) 6550px,
+            calc(50% + 250px) 6550px,
+            calc(50%) 6800px;
+    
+    }
+
     /* ********************************************************************************************Header starts************************************************************************************************** */
   
     .technolkar-header{
