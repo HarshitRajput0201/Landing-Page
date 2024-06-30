@@ -1480,7 +1480,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
     .main-container{
 
@@ -1776,7 +1776,7 @@
 
 }
 
-@media (min-width: 390px) and (max-width: 479.98px) {
+@media (min-width: 390px) and (max-width: 768px) {
     
     .main-container{
         background-size: 

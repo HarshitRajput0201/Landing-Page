@@ -43,10 +43,10 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,  // Enables infinite loop
-    // autoplay: {
-    //   delay: 2500,  // Auto-scroll delay in milliseconds
-    //   disableOnInteraction: false,  // Continue auto-scroll after interaction
-    // },
+    autoplay: {
+      delay: 2500,  // Auto-scroll delay in milliseconds
+      disableOnInteraction: false,  // Continue auto-scroll after interaction
+    },
     breakpoints: {
         // when window width is >= 320px
         390: {
