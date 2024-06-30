@@ -49,7 +49,7 @@ var swiper = new Swiper(".mySwiper", {
     // },
     breakpoints: {
         // when window width is >= 320px
-        320: {
+        390: {
           slidesPerView: 1,
           spaceBetween: 10
         },
@@ -70,3 +70,17 @@ var swiper = new Swiper(".mySwiper", {
         }
       }
   });
+
+  function showSidebar(){
+    const sidebar = document.querySelector(".nav-sidebar")
+    sidebar.style.display = 'flex'
+    const sidebar2 = document.querySelector(".nav-bar-out")
+    sidebar2.style.display = 'flex'
+}
+
+function hidesidebar(){
+    const sidebar = document.querySelector(".nav-sidebar")
+    sidebar.style.display = 'none'
+    // const sidebar2 = document.querySelector(".nav-bar-out")
+    // sidebar2.style.display = 'none'
+}
