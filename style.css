@@ -1774,9 +1774,442 @@
 
 @media (min-width: 480px) and (max-width: 599.98px) {
 
+    .main-container{
+        background-size: 
+            200px 200px,
+            200px 200px,
+            1200px 1200px,
+            1200px 1200px,
+            1200px 1200px,
+            1200px 1200px,
+            300px 300px,
+            300px 300px,
+            200px 00px,
+            1500px 1100px,
+            1500px 1100px,
+            1200px 1000px,
+            1200px 1000px,
+            00px 00px,
+            1200px 1000px,
+            1200px 1000px,
+            800px 800px;
+
+
+        /* Multiple background repeats */
+        background-repeat: 
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat;
+
+        /* Multiple background positions */
+        background-position: 
+            calc(50% - 200px) 225px,         
+            calc(50% + 200px) 150px,
+            center 450px,
+            center 1350px,
+            center 2100px,
+            center 3100px,
+            calc(50% - 100px) 5200px,
+            calc(50% + 100px) 5200px,
+            calc(50% + 400px) 4600px,
+
+            calc(50%) 5000px,
+            calc(50%) 5800px,
+            calc(50%) 6250px,
+            calc(50%) 7050px,
+            calc(50%) 8300px,
+            calc(50%) 8250px,
+            calc(50% + 250px) 8750px,
+            calc(50% - 800px) 9000px;
+
+    }
+    
+    /* ***********************************************************************************************Header Start********************************************************************************************** */
+    .technolkar-header{
+        width: 440px;
+    }
+    .Home{
+        width: 440px;
+    }
+    .Products,
+    .Services,
+    .Youtube,
+    .Teams,
+    .Footer{
+        width: 440px;
+        padding: 100px 0 0 0 ;
+    }
+
+    .nav-bar-container,
+    .header-button-a{
+        display: none;
+    }
+
+    .nav-icon-div{
+        display: flex;
+        padding: 10px;
+    }
+
+
+    /* ***********************************************************************************************Header Ends********************************************************************************************** */
+
+    /* ***********************************************************************************************Home Start********************************************************************************************** */
+
+    .home-container{
+        width: 100%;
+        gap: 60px;
+        padding: 80px 0 0 0;
+        margin-top: 20px;
+    }
+    .main-heading{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-heading h1{ 
+        font-size: 28px;
+        width: 85%;
+        
+    }
+    .community-button button{
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .student-block{
+        width: 236px;
+        height: 40px;
+        padding: 8px 10px;
+    }
+    .student-block img{
+        width: 75px;
+    }
+    .student-container p{
+        font-size: 12px
+    }
+    .tab-1,
+    .tab-2,
+    .tab-3{
+        width: auto;
+        height: auto;
+        gap: 0;
+        padding: 10px 22px;
+        border-radius: 8px;
+    }
+    .tab-number{
+        font-size: 14px;
+    }
+    .tab-text{
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .student-tabs{
+        width: 100%;
+    }
+    .video-container{
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .video-container iframe{
+        border-radius: 4px;
+    }
+
+
+    /* ***********************************************************************************************Home Ends********************************************************************************************** */
+
+    /* **********************************************************************************************Product Start******************************************************************************************* */
+
+    .heading{
+        gap: 0px;
+    }
+    .heading h1{
+        font-size: 24px;
+    }
+    .line{
+        width: 100px;
+        height: 5px;
+    }
+    .Products{
+        gap: 40px;
+    }
+    .product-card1,
+    .product-card2,
+    .product-card3{
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 20px;
+        gap: 16px;
+    }
+    .product-image{
+        width: 100%;
+        height: 250px;
+    }
+    .product-image img{
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .product-des1,
+    .product-des2,
+    .product-des3{
+        width: 100%;
+        background-size: 0px 0px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 16px;
+    }
+    .product-des-detail h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .product-des-detail p{
+        display: none;
+    }
+    .button-container{
+        width: 100%;
+        justify-content: center;
+    }
+    .button-container button{
+        /* width: 100%; */
+        padding: 10px 24px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-div{
+        gap: 0;
+    }
+    .button-div h1{
+        font-size: 12px;
+    }
+    .button-div img{
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+
+
+    /* **********************************************************************************************Product Ends******************************************************************************************* */
+
+    /* **********************************************************************************************Service Start******************************************************************************************* */
+
+    .Services{
+        gap: 40px;
+    }
+    .service-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* **********************************************************************************************Service Ends******************************************************************************************* */
+
+    /* **********************************************************************************************Youtube Start******************************************************************************************* */
+
+    .Youtube{
+        gap: 40px;
+    }
+    .youtube-container{
+        gap: 24px;
+    }
+    .youtbe-cont-heading h1{
+        font-size: 16px;
+    }
+    .youtube-video-cont{
+        gap: 16px;
+    }
+    .video1-name h1{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .video1-channel p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .watch-button-co{
+        width: 80px;
+        height: 22px;
+    }
+    .watch-button-co p{
+        font-size: 10px;
+        padding: 6px 12px;
+        height: 26px;
+        font-weight: 500px;
+    }
+    .video1-name-cont{
+        gap: 8px;
+    }
+    .video1-channel{
+        gap: 0px;
+    }
+    .youtube-video1-des{
+        gap: 20px;
+    }
+    .yotube-video1{
+        height: 100%;
+    }
+    .yotube-video1 img{
+        width: 100%;
+        height: 132px;
+        object-fit: cover;
+    }
+    .youtube-subcon1,
+    .youtube-subcon2{
+        gap: 8px;
+    }
+    .youtube-videos-cont{
+        gap: 16px;
+    }
+    .videos-div-1-a{
+        width: 48%;
+    }
+    .videos-div-1{
+        width: 100%;
+        border-radius: 16px;
+        
+    }
+    .videos-div-1 img{
+        border-radius: 16px;
+    }
+    .channel-logo-div{
+        width: 100%;
+    }
+    .channel-logo{
+        display: none;
+    }
+    .videos-1-views{
+        display: none;
+    }
+    .video-name p{
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px
+    }
+    .hidden-you-card{
+        display: none;
+    }
+    .youtube-subcon3 p{
+        font-size: 12px;
+    }
+    .sub-button-co{
+        width: 96px;
+        height: 26px;
+        padding: 6px 12px;
+    }
+    .sub-subscribe p{
+        font-size: 10px;
+    }
+    .sub-img{
+        width: 16px;
+        height: 16px;
+    }
+    .sub-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* **********************************************************************************************Youtube Ends******************************************************************************************* */
+
+    /* **********************************************************************************************Teams Start******************************************************************************************* */
+
+    .Teams{
+        gap: 40px;
+    }
+    .card_container{
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card1-container,
+    .card2-container,
+    .card3-container,
+    .card4-container,
+    .card5-container,
+    .card6-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .card_image{
+        width: 100%;
+        height: 320px;
+    }
+    .card_image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6{
+        border-radius: 16px;
+        gap: 16px;
+    }
+
+
+    /* **********************************************************************************************Teams Ends******************************************************************************************* */
+
+    /* **********************************************************************************************Footer Start***************************************************************************************** */
+
+    .Footer{
+        gap: 40px;
+    }
+    .testmonials-container{
+        gap: 40px;
+    }
+    .happy-customer{
+        padding: 8px 24px;
+    }
+    .happy-customer p{
+        font-size: 14px;
+    }
+    .card-des{
+        margin-top: 10px;
+    }
+    .footer-top{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-top-left{
+        justify-content: left;
+    }
+    .footer-top-right{
+        flex-direction: column;
+        gap: 36px;
+    }
+    .footer-bottom{
+        flex-direction: column-reverse;
+        gap: 8px;
+    }
+    .copyright-des{
+        font-size: 12px;
+    }
+    .developed-by{
+        font-size: 12px;
+    }
 }
 
-@media (min-width: 390px) and (max-width: 768px) {
+@media (min-width: 390px) and (max-width: 479.98px) {
     
     .main-container{
         background-size: 
