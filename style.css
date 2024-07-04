@@ -2052,7 +2052,365 @@
 }
 
 @media (min-width: 600px) and (max-width: 767.98px) {
+    .main-container{
 
+        /* Multiple background sizes */
+            background-size: 
+                450px 450px,
+                450px 450px,
+                1200px 1200px,
+                1200px 1200px,
+                1200px 1200px,
+                1200px 1200px,
+                600px 600px,
+                600px 600px,
+                0px 0px,
+                1500px 1100px,
+                1500px 1100px,
+                1200px 1000px,
+                1200px 1000px,
+                0px 0px,
+                000px 000px,
+                000px 000px,
+                0px 0px;
+        
+        
+            /* Multiple background repeats */
+            background-repeat: 
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat,
+                no-repeat;
+        
+            /* Multiple background positions */
+            background-position: 
+                calc(50% - 300px) 200px,     
+                calc(50% + 300px) 116.66px,
+                center 200px,
+                center 800px,
+                center 2100px,
+                center 2700px,
+                calc(50% - 150px) 4000px,
+                calc(50% + 150px) 4000px,
+                calc(50% + 250px) 3900px,
+                calc(50%) 4800px,
+                calc(50%) 5300px,
+                calc(50% - 200px) 6400px,
+                calc(50% + 250px) 6300px,
+                calc(50%) 6300px,
+                calc(50% - 250px) 6550px,
+                calc(50% + 250px) 6550px,
+                calc(50%) 6800px;
+        
+        }
+    
+        /* ********************************************************************************************Header starts************************************************************************************************** */
+      
+        .technolkar-header{
+            width: 560px;
+        }
+        .nav-bar-container ul li a{
+            margin: 0;
+            font-size: 16px;
+        }
+        .lets-connect button span{
+            font-size: 16px;
+        }
+        .lets-connect button{
+            padding: 4px 16px;
+        }
+    
+        /* ********************************************************************************************Header Ends**************************************************************************************************** */
+    
+        /* ********************************************************************************************Home starts************************************************************************************************** */
+    
+        .Home{
+            width: 560px;
+        }
+        .Products,
+        .Services,
+        .Youtube,
+        .Teams,
+        .Footer{
+            width: 560px;
+            padding: 120px 0 0 0 ;
+        }
+    
+        .home-container{
+            width: 100%;
+            gap: 60px;
+            padding: 80px 0 0 0;
+            margin-top: 50px;
+        }
+    
+        .main-heading h1{ 
+            font-size: 40px;
+            font-weight: 600;
+            width: 80%;
+        }
+        .community-button button{
+            width: 270px;
+            height: 50px;
+            font-size: 18px;
+        }
+        .student-block img{
+            width: 120px;
+            height: 40px;
+        }
+        .student-block{
+            width: fit-content;
+            gap: 20px;
+        }
+        .student-container{
+            width: fit-content;
+        }
+        .student-container p{
+            font-size: 16px;
+        }
+        .student-tabs{
+            width: 100%;
+        }
+        .tab-number{
+            font-size: 26px;
+        }
+        .tab-text{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .tab-1,
+        .tab-2,
+        .tab-3{
+            width: 176px;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-container{
+            border-radius: 24px;
+            padding: 20px;
+        }
+    
+        /* ********************************************************************************************Home Ends**************************************************************************************************** */
+    
+        /* ********************************************************************************************Product starts*********************************************************************************************** */
+        .Products{
+            gap: 60px;
+        }
+        .heading{
+            gap: 0px;
+        }
+        .heading h1{
+            font-size: 36px;
+        }
+        .product-card1,
+    .product-card2,
+    .product-card3{
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 20px;
+        gap: 16px;
+    }
+    .product-image{
+        width: 100%;
+        height: 250px;
+    }
+    .product-image img{
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .product-des1,
+    .product-des2,
+    .product-des3{
+        width: 100%;
+        background-size: 0px 0px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 16px;
+    }
+    .product-des-detail h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .product-des-detail p{
+        display: none;
+    }
+    .button-container{
+        width: 100%;
+        justify-content: center;
+    }
+    .button-container button{
+        /* width: 100%; */
+        padding: 10px 24px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-div{
+        gap: 0;
+    }
+    .button-div h1{
+        font-size: 12px;
+    }
+    .button-div img{
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+    
+    
+       /* ********************************************************************************************Product Ends*********************************************************************************************** */
+    
+    
+       /* ********************************************************************************************Service start********************************************************************************************** */
+    
+       .Services{
+            gap: 60px;
+       }
+       .service-container{
+            grid-template-columns: repeat(2, 1fr);
+       }
+       .service-name h1{
+            font-size: 20px;
+       }
+    
+       /* ********************************************************************************************Service Ends********************************************************************************************** */
+    
+       /* ********************************************************************************************Youtube start********************************************************************************************** */
+    
+       .youtbe-cont-heading h1{
+        font-size: 24px;
+       }
+       .youtube-video-cont{
+            gap: 22px;
+            height: 250px;
+            align-items: start;
+       }
+       .youtube-subcon1,
+       .youtube-subcon2{
+        gap: 20px;
+       }
+       .video1-name h1{
+            font-size: 18px;
+       }
+       .youtube-video1-des{
+            gap: 20px;
+       }
+       .yotube-video1 img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+       }
+       .watch-button-co p{
+            padding: 12px 16px;
+       }
+       .hidden-you-card{
+            display: none;
+       }
+       .youtube-videos-cont{
+            gap: 22px;
+       }
+       .videos-div-1-a{
+            width: 49%;
+       }
+       .videos-div-1,
+       .videos-1-des{
+            width: 100%;
+       }
+       .video-name{
+            display: flex;
+            justify-content: end;
+       }
+       .video-name p{
+            width: 90%;
+            font-size: 15px;
+       }
+       .videos-1-views {
+            padding-left: 60px;
+       }
+       .videos-1-views p{
+            font-size: 14px;
+       }
+       .channel-logo-div{
+            gap: 0px;
+            justify-content: space-between;
+       }
+       .channel-logo img{   
+            width: 40px;
+       }
+    
+       /* ********************************************************************************************Youtube Ends********************************************************************************************** */
+    
+       /* ********************************************************************************************Teams start********************************************************************************************** */
+    
+       .Teams{
+            gap: 60px;
+       }
+       .card_container{
+            grid-template-columns: repeat(2, 1fr);
+       }
+       .card1,
+       .card2,
+       .card3,
+       .card4,
+       .card5,
+       .card6{
+            width: 100%;
+            height: fit-content;
+            gap: 24px;
+       }
+       .card1-container,
+       .card2-container,
+       .card3-container,
+       .card4-container,
+       .card5-container,
+       .card6-container{
+            width: 100%;
+            gap: 0px;
+            height: fit-content;
+       }
+       .card_image{
+            width: 216px;
+            height: 220px;
+       }
+       .hidden-box p{
+        font-size: 12px;
+       }
+       .card-des{
+            margin-top: 10px
+       }
+       .card_bio h1{
+            font-size: 22px;
+       }
+       .card_bio p{
+            font-size: 16px;
+       }
+       .footer-top{
+            flex-direction: column;
+            gap: 40px;
+       }
+       .footer-top-left{
+            justify-content: left;
+       }
+       .developed-by,
+       .copyright-des
+       {
+        font-size: 14px;
+       }
 }
 
 @media (min-width: 480px) and (max-width: 599.98px) {

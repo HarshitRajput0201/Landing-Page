@@ -47,6 +47,7 @@ var swiper = new Swiper(".mySwiper", {
       delay: 2500,  // Auto-scroll delay in milliseconds
       disableOnInteraction: false,  // Continue auto-scroll after interaction
     },
+    speed: 700,
     breakpoints: {
         // when window width is >= 320px
         390: {
@@ -59,7 +60,7 @@ var swiper = new Swiper(".mySwiper", {
           spaceBetween: 20
         },
         600: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 20
         },
         // when window width is >= 768px
