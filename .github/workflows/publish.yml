@@ -1,0 +1,26 @@
+name: Build and Push Static Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Push Static Site
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Prepare for Deployment
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout -b build || git checkout build
+
+      - name: Push to Build Branch
+        run: |
+          git add .
+          git commit -m "Deploy static site"
+          git push origin build --force
