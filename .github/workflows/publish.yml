@@ -27,10 +27,9 @@ jobs:
         run: |
           mkdir -p deploy
 
-      - name: Copy Files to Build Directory
+      - name: Copy Files to Deploy Directory
         run: |
-          shopt -s extglob
-          cp -r !(deploy) deploy/
+          rsync -av --exclude='deploy' . deploy/
         shell: bash
 
       - name: Commit and Push to Build Branch
