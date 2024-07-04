@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false # Avoids using the GITHUB_TOKEN to authenticate pushes
 
       - name: Set Up Git User
         run: |
@@ -25,15 +23,19 @@ jobs:
           git fetch origin
           git checkout build || git checkout -b build
 
+      - name: Prepare Build Directory
+        run: |
+          mkdir -p deploy
+
       - name: Copy Files to Build Directory
         run: |
-          mkdir -p build
-          cp -r * build/
+          shopt -s extglob
+          cp -r !(deploy) deploy/
         shell: bash
 
       - name: Commit and Push to Build Branch
         run: |
-          cd build
+          cd deploy
           git init
           git remote add origin https://github.com/HarshitRajput0201/Landing-Page.git
           git add --all
