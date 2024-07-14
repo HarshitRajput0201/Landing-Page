@@ -2952,6 +2952,12 @@
         display: flex;
         padding: 10px;
     }
+    .lets-connect button span{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
     /* ***********************************************************************************************Header Ends********************************************************************************************** */
