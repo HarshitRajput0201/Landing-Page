@@ -287,6 +287,11 @@
     transition: all .5s;
     font-weight: 600;
 }
+.header-button-a{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
 .lets-connect{
     display: flex;
     justify-content: center;
@@ -628,12 +633,13 @@
     background-color: transparent;
 }
 
-.button-container button{
+.button-container a{
     background-color: rgba(255, 255, 255, 0.115);
     border: 1px solid white;
     padding: 12px 20px;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .button-div{
@@ -1622,7 +1628,7 @@
         .product-des-detail h1{
             font-size: 24px;
         }
-        .button-container button{
+        .button-container a{
             width: 140px;
             height: 40px;
             font-size: 18px;
@@ -1835,6 +1841,10 @@
     .technolkar-header{
         width: 728px;
     }
+    .nav-bar-container ul li a{
+        margin: 0;
+        font-size: 18px;
+    }
 
     /* ********************************************************************************************Header Ends**************************************************************************************************** */
 
@@ -1910,7 +1920,7 @@
     .product-des-detail h1{
         font-size: 24px;
     }
-    .button-container button{
+    .button-container a{
         width: 140px;
         height: 40px;
         font-size: 18px;
@@ -2124,10 +2134,11 @@
         }
         .nav-bar-container ul li a{
             margin: 0;
-            font-size: 16px;
+            font-size: 14px;
+            margin: 0px;
         }
         .lets-connect button span{
-            font-size: 16px;
+            font-size: 14px;
         }
         .lets-connect button{
             padding: 4px 16px;
@@ -2216,62 +2227,62 @@
             font-size: 36px;
         }
         .product-card1,
-    .product-card2,
-    .product-card3{
-        flex-direction: column;
-        border-radius: 16px;
-        padding: 20px;
-        gap: 16px;
-    }
-    .product-image{
-        width: 100%;
-        height: 250px;
-    }
-    .product-image img{
-        border-radius: 8px;
-        object-fit: cover;
-    }
-    .product-des1,
-    .product-des2,
-    .product-des3{
-        width: 100%;
-        background-size: 0px 0px;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        gap: 16px;
-    }
-    .product-des-detail h1{
-        font-size: 20px;
-        text-align: center;
-    }
-    .product-des-detail p{
-        display: none;
-    }
-    .button-container{
-        width: 100%;
-        justify-content: center;
-    }
-    .button-container button{
-        /* width: 100%; */
-        padding: 10px 24px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .button-div{
-        gap: 0;
-    }
-    .button-div h1{
-        font-size: 12px;
-    }
-    .button-div img{
-        width: 20px;
-        height: 20px;
-        display: none;
-    }
-    
+        .product-card2,
+        .product-card3{
+            flex-direction: column;
+            border-radius: 16px;
+            padding: 20px;
+            gap: 16px;
+        }
+        .product-image{
+            width: 100%;
+            height: 250px;
+        }
+        .product-image img{
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .product-des1,
+        .product-des2,
+        .product-des3{
+            width: 100%;
+            background-size: 0px 0px;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            gap: 16px;
+        }
+        .product-des-detail h1{
+            font-size: 20px;
+            text-align: center;
+        }
+        .product-des-detail p{
+            display: none;
+        }
+        .button-container{
+            width: 100%;
+            justify-content: center;
+        }
+        .button-container a{
+            /* width: 100%; */
+            padding: 10px 24px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button-div{
+            gap: 0;
+        }
+        .button-div h1{
+            font-size: 12px;
+        }
+        .button-div img{
+            width: 20px;
+            height: 20px;
+            display: none;
+        }
+        
     
        /* ********************************************************************************************Product Ends*********************************************************************************************** */
     
@@ -2628,7 +2639,7 @@
         width: 100%;
         justify-content: center;
     }
-    .button-container button{
+    .button-container a{
         /* width: 100%; */
         padding: 10px 24px;
         height: 36px;
@@ -3065,7 +3076,7 @@
         width: 100%;
         justify-content: center;
     }
-    .button-container button{
+    .button-container a{
         /* width: 100%; */
         padding: 10px 24px;
         height: 36px;

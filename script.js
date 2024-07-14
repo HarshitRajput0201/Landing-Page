@@ -19,25 +19,32 @@ window.addEventListener('scroll', function() {
 });
 
 document.querySelectorAll('nav a').forEach(a => {
-    a.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
+  a.addEventListener('click', function(event) {
+      // Check if the link is an external link or the 'Lets Connect' button
+      if (this.getAttribute('href').startsWith('http') || this.getAttribute('href') === 'form.html') {
+          return; // Allow default behavior for external links
+      }
 
-        const targetId = this.getAttribute('href').slice(1);
-        const targetSection = document.getElementById(targetId);
-        const offsetTop = targetSection.offsetTop;
+      event.preventDefault(); // Prevent default anchor behavior
 
-        window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth' // Smooth scrolling behavior
-        });
+      const targetId = this.getAttribute('href').slice(1);
+      const targetSection = document.getElementById(targetId);
+      const offsetTop = targetSection.offsetTop;
 
-        // Highlight the clicked button
-        document.querySelectorAll('nav a').forEach(link => {
-            link.classList.remove('active');
-        });
-        this.classList.add('active');
-    });
+      window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth' // Smooth scrolling behavior
+      });
+
+      // Highlight the clicked button
+      document.querySelectorAll('nav a').forEach(link => {
+          link.classList.remove('active');
+      });
+      this.classList.add('active');
+  });
 });
+
+
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
