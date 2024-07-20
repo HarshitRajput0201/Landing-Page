@@ -57,7 +57,7 @@ var swiper = new Swiper(".mySwiper", {
     speed: 700,
     breakpoints: {
         // when window width is >= 320px
-        390: {
+        360: {
           slidesPerView: 1,
           spaceBetween: 10
         },

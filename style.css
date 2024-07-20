@@ -151,7 +151,7 @@
     top: 0;
     right: 0;
     height: 100vh;
-    width: 50%;
+    width: 60%;
     z-index: 99;
     background-color: rgba(255, 255, 255, 0.178);
     margin: 0;
@@ -2861,7 +2861,7 @@
     }
 }
 
-@media (min-width: 390px) and (max-width: 479.98px) {
+@media (min-width: 360px) and (max-width: 479.98px) {
     
     .main-container{
         background-size: 
@@ -2929,17 +2929,17 @@
     
     /* ***********************************************************************************************Header Start********************************************************************************************** */
     .technolkar-header{
-        width: 360px;
+        width: 340px;
     }
     .Home{
-        width: 360px;
+        width: 340px;
     }
     .Products,
     .Services,
     .Youtube,
     .Teams,
     .Footer{
-        width: 360px;
+        width: 340px;
         padding: 100px 0 0 0 ;
     }
 
