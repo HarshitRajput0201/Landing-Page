@@ -14,6 +14,11 @@
         }
         body{
             background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
        .form-container{
             width: 1196px;
@@ -30,6 +35,8 @@
             justify-content: center;
             align-items: center;
             transition: all 0.3s ease-in-out;
+            position: absolute;
+            top: 60px;
        }
        .form-button a{
             width: 50px;
@@ -47,8 +54,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: absolute;
-            top: 25%;
+            position: absolute; 
+            top: 20%;
        }
        .form-text{
             width: 50%;
@@ -159,115 +166,227 @@
         }
 
         @media (min-width: 768px) and (max-width: 991.98px){
+            
+            .form-container{
+                width: 748px;
+                display: flex;
+                flex-direction: column;
+            }
             .form-body{
                 display: flex;
                 flex-direction: column;
                 padding: 0 64px;
-                gap: 120px;
+                gap: 60px;
             }
             .form-text{
                 height: auto;
             }
             .form-text p{
                 text-align: center;
-                font-size: 56px;
-                line-height: 76px;
+                font-size: 48px;
+                line-height: 56px;
+                width: 100%;
             }
             .form-text{
-                width: 80%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .form{
-                width: 80%;
+                width: 100%;
             }
         }
         @media (min-width: 600px) and (max-width: 767.98px){
+            .form-container{
+                width: 560px;
+                display: flex;
+                flex-direction: column;
+            }
             .form-body{
                 display: flex;
                 flex-direction: column;
-                padding: 0 64px;
-                gap: 120px;
+                padding: 0 36px;
+                gap: 60px;
+                top: 15%;
             }
             .form-text{
                 height: auto;
             }
             .form-text p{
                 text-align: center;
-                font-size: 56px;
-                line-height: 76px;
+                font-size: 48px;
+                line-height: 56px;
             }
             .form-text{
-                width: 80%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .form{
-                width: 80%;
+                width: 100%;
             }
         }
         @media (min-width: 480px) and (max-width: 599.98px){
+            .form-container{
+                width: 450px;
+                display: flex;
+                flex-direction: column;
+            }
+            .form-button{
+                top: 40px;
+            }
             .form-body{
                 display: flex;
                 flex-direction: column;
-                padding: 0 64px;
-                gap: 120px;
+                padding: 0 24px;
+                gap: 40px;
+                top: 12%;
             }
             .form-text{
                 height: auto;
             }
             .form-text p{
                 text-align: center;
-                font-size: 56px;
-                line-height: 76px;
+                font-size: 36px;
+                line-height: 48px;
             }
             .form-text{
-                width: 80%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .form{
-                width: 80%;
+                width: 100%;
+                height: fit-content;
+                border-radius: 40px;
+
+            }
+            .form form{
+                padding: 40px;
+                justify-content: space-between;
+            }
+            .name,
+            .email,
+            .number{
+                width: 100%; 
+                height: 40px; 
+                padding: 6px 16px;
+                border-radius: 16px; 
+                border: none; 
+                background-color: rgba(255, 255, 255, 0.237); 
+                font-family: Inter; 
+                font-size: 16px; 
+                color: rgba(255, 255, 255, 0.8); 
+                box-sizing: border-box; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .message{
+                resize: none; 
+                overflow: auto; 
+                width: 100%; 
+                height: 150px; 
+                padding: 16px 16px;
+                border-radius: 16px; 
+                border: none; 
+                background-color: rgba(255, 255, 255, 0.237);
+                font-family: Inter; 
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.8); 
+                box-sizing: border-box; 
             }
         }
         @media (min-width: 390px) and (max-width: 479.98px){
+            .form-container{
+                width: 370px;
+                display: flex;
+                flex-direction: column;
+                /* margin: 0 10px; */
+            }
+            .form-button{
+                top: 40px;
+            }
+            .form-button a{
+                width: 40px;
+                height: 40px;
+            }
             .form-body{
                 display: flex;
                 flex-direction: column;
-                padding: 0 64px;
-                gap: 120px;
+                padding: 0 16px;
+                gap: 20px;
+                top: 10%;
             }
             .form-text{
                 height: auto;
             }
             .form-text p{
                 text-align: center;
-                font-size: 56px;
-                line-height: 76px;
+                font-size: 24px;
+                line-height: 36px;
             }
             .form-text{
-                width: 80%;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .form{
-                width: 80%;
+                width: 100%;
+                height: fit-content;
+                border-radius: 30px;
+            }
+            .form form{
+                padding: 30px;
+                justify-content: space-between;
+                
+            }
+            .name,
+            .email,
+            .number{
+                width: 100%; 
+                height: 40px; 
+                padding: 6px 16px;
+                border-radius: 16px; 
+                border: none; 
+                background-color: rgba(255, 255, 255, 0.237); 
+                font-family: Inter; 
+                font-size: 16px; 
+                color: rgba(255, 255, 255, 0.8); 
+                box-sizing: border-box; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .message{
+                resize: none; 
+                overflow: auto; 
+                width: 100%; 
+                height: 150px; 
+                padding: 16px 16px;
+                border-radius: 16px; 
+                border: none; 
+                background-color: rgba(255, 255, 255, 0.237);
+                font-family: Inter; 
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.8); 
+                box-sizing: border-box; 
             }
         }
 
     </style>
 </head>
 <body>
+    <div class="form-button">
+        <a href="index.html">
+            <img src="./Assets/cross.png" alt="">
+        </a>
+    </div>
     <div class="form-container">
-        <div class="form-button">
-            <a href="index.html">
-                <img src="./Assets/cross.png" alt="">
-            </a>
-        </div>
         <div class="form-body">
             <div class="form-text">
                 <p>Let’s collaborate and make BIG things together </p>
@@ -277,7 +396,7 @@
                     <input type="hidden" name="access_key" value="9a1f81f4-0640-4d97-ac36-56af25972d6a">
                     <input class="name" type="text" name="name" placeholder="Name" required>
                     <input class="email" type="email" name="email" placeholder="Email" required>
-                    <input class="number" type="number" name="phone" placeholder="Phone Number" required>
+                    <input class="number" type="tel" name="phone" pattern="[+]{1}[0-9]{2}[ ][0-9]{10}" placeholder="Phone Number" required>
                     <textarea class="message" name="message" name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                     <input class="submit-button" type="submit" value="Send">
                 </form>
