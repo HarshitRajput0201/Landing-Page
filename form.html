@@ -10,33 +10,21 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            position: relative;
-        }
-        body{
             background-color: black;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
         }
-       .form-container{
-            width: 1196px;
-            height: 100vh;
+        .form-container{
             display: flex;
             flex-direction: column;
-            gap: 88px;
-            align-items: center;  
-            margin: auto;  
-            padding: 56px 0;
-       }
+            width: 1196px;
+            padding: 40px 0;
+            gap: 160px;
+            margin: auto;
+        }
        .form-button{
             display: flex;
             justify-content: center;
             align-items: center;
             transition: all 0.3s ease-in-out;
-            position: absolute;
-            top: 60px;
             z-index: 10;
        }
        .form-button a{
@@ -55,8 +43,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: absolute; 
-            top: 20%;
        }
        .form-text{
             width: 50%;
@@ -82,8 +68,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgba(255, 255, 255, 0.122);
-            border-radius: 50px;
         }
         .form form{
             width: 100%;
@@ -94,6 +78,8 @@
             align-items: center;
             gap: 24px;
             padding: 60px;
+            background-color: rgba(201, 194, 194, 0.122);
+            border-radius: 50px;
         }
         .name,
         .email,
@@ -165,13 +151,13 @@
                 line-height: 90px;
             }
         }
-
         @media (min-width: 768px) and (max-width: 991.98px){
             
             .form-container{
                 width: 748px;
                 display: flex;
                 flex-direction: column;
+                gap: 80px;
             }
             .form-body{
                 display: flex;
@@ -203,11 +189,12 @@
                 width: 560px;
                 display: flex;
                 flex-direction: column;
+                gap: 80px;
             }
             .form-body{
                 display: flex;
                 flex-direction: column;
-                padding: 0 36px;
+                /* padding: 0 36px; */
                 gap: 60px;
                 top: 15%;
             }
@@ -216,7 +203,7 @@
             }
             .form-text p{
                 text-align: center;
-                font-size: 48px;
+                font-size: 42px;
                 line-height: 56px;
             }
             .form-text{
@@ -234,14 +221,19 @@
                 width: 450px;
                 display: flex;
                 flex-direction: column;
+                gap: 40px;
             }
             .form-button{
                 top: 40px;
             }
+            .form-button a{
+                width: 40px;
+                height: 40px;
+            }
             .form-body{
                 display: flex;
                 flex-direction: column;
-                padding: 0 24px;
+                /* padding: 0 24px; */
                 gap: 40px;
                 top: 12%;
             }
@@ -262,12 +254,12 @@
             .form{
                 width: 100%;
                 height: fit-content;
-                border-radius: 40px;
 
             }
             .form form{
                 padding: 40px;
                 justify-content: space-between;
+                border-radius: 40px;
             }
             .name,
             .email,
@@ -306,6 +298,7 @@
                 width: 340px;
                 display: flex;
                 flex-direction: column;
+                gap: 20px;
                 /* margin: 0 10px; */
             }
             .form-button{
@@ -318,7 +311,7 @@
             .form-body{
                 display: flex;
                 flex-direction: column;
-                padding: 0 16px;
+                /* padding: 0 16px; */
                 gap: 20px;
                 top: 10%;
             }
@@ -339,12 +332,11 @@
             .form{
                 width: 100%;
                 height: fit-content;
-                border-radius: 30px;
             }
             .form form{
                 padding: 30px;
                 justify-content: space-between;
-                
+                border-radius: 30px;
             }
             .name,
             .email,
@@ -381,13 +373,13 @@
 
     </style>
 </head>
-<body>
-    <div class="form-button">
-        <a href="index.html">
-            <img src="./Assets/cross.png" alt="">
-        </a>
-    </div>
+<body> 
     <div class="form-container">
+        <div class="form-button">
+            <a href="index.html">
+                <img src="./Assets/cross.png" alt="">
+            </a>
+        </div>
         <div class="form-body">
             <div class="form-text">
                 <p>Let’s collaborate and make BIG things together </p>
