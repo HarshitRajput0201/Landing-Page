@@ -22,8 +22,9 @@ document.querySelectorAll('nav a').forEach(a => {
   a.addEventListener('click', function(event) {
       // Check if the link is an external link or the 'Lets Connect' button
       if (this.getAttribute('href').startsWith('http') || this.getAttribute('href') === 'form.html') {
-          return; // Allow default behavior for external links
+          return; // Allow default behavior for external
       }
+
 
       event.preventDefault(); // Prevent default anchor behavior
 
